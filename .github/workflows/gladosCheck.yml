@@ -1,14 +1,8 @@
 name: auto check
 
 on:
-  workflow_dispatch:
-  push:
-    branches: [ master ]
-    paths-ignore:
-      - 'README.md'
-      - 'imgs/**'
   schedule:
-    - cron: '05 2,12 * * *'
+    - cron: '10 2,12 * * *'
       timezone: 'Asia/Shanghai'
 
 jobs:
